@@ -2,6 +2,8 @@
 
 A Zellij layout configuration for an AI-powered coding environment with Claude, cursor-agent, and ccusage monitoring.
 
+![AI-CLI](image.png)
+
 ## Prerequisites
 
 - [Zellij](https://zellij.dev/documentation/installation) terminal multiplexer

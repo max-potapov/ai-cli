@@ -1,5 +1,5 @@
 layout {
-    tab name="code" focus=true hide_floating_panes=true {
+    tab name="Coding" focus=true hide_floating_panes=true {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
@@ -16,7 +16,19 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="review" hide_floating_panes=true {
+    tab name="Planning" hide_floating_panes=true {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane split_direction="vertical" {
+            pane command="claude" size="50%"
+            pane command="cursor-agent" size="50%"
+        }
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="Review" hide_floating_panes=true {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
@@ -25,7 +37,7 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="terminal" hide_floating_panes=true {
+    tab name="Terminal" hide_floating_panes=true {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }

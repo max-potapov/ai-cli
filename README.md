@@ -8,7 +8,9 @@ A Zellij layout configuration for an AI-powered coding environment with Claude, 
 
 - [Zellij](https://zellij.dev/documentation/installation) terminal multiplexer
 - Claude CLI tool
+- OpenAI Codex CLI tool
 - cursor-agent
+- lazygit
 - bunx (for ccusage blocks)
 
 ## Installation
@@ -54,15 +56,24 @@ This will launch Zellij with the AI coding layout.
 
 ## Layout Structure
 
-The layout includes three tabs:
+The layout includes several tabs:
 
-### Code Tab (default)
+### Coding Tab (default)
+- Left pane (60%): Claude - Full height for AI coding assistance
+- Right panes (40%): 
+  - Codex - OpenAI Codex for code generation
+  - lazygit - Git interface for version control
+
+### Planning Tab
 - Left pane (50%): Claude
-- Right top pane (25%): ccusage blocks (live monitoring)
-- Right bottom pane (25%): cursor-agent
+- Right pane (50%): cursor-agent
 
 ### Review Tab
-- Full pane: cursor-agent
+- Left pane (50%): cursor-agent
+- Right pane (50%): lazygit
+
+### Usage Tab
+- Full pane: ccusage blocks (live monitoring)
 
 ### Terminal Tab
 - Full pane: Regular terminal

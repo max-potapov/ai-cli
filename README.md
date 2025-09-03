@@ -13,6 +13,22 @@ A Zellij layout configuration for an AI-powered coding environment with Claude, 
 - lazygit
 - bunx (for ccusage blocks)
 
+### Recommended: LazyVim
+If you use `nvim` in this layout, consider installing [LazyVim](https://lazyvim.org) for an excellent out-of-the-box coding experience (LSP, formatting, treesitter, file explorer).
+
+Quick install:
+```bash
+# Backup any existing Neovim config first
+mv ~/.config/nvim ~/.config/nvim.bak 2>/dev/null || true
+
+# Install LazyVim starter
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
+# First launch will install plugins
+nvim
+```
+
 ## Installation
 
 ### Quick Install

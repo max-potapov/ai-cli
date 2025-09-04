@@ -25,10 +25,7 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        pane split_direction="vertical" {
-            pane command="claude" size="50%"
-            pane command="cursor-agent" size="50%"
-        }
+        pane command="codex"
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
@@ -37,10 +34,7 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        pane split_direction="vertical" {
-            pane command="cursor-agent" size="50%"
-            pane command="lazygit" size="50%"
-        }
+        pane command="lazygit"
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
@@ -352,4 +346,3 @@ layout {
         }
     }
 }
-

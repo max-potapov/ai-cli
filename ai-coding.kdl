@@ -5,16 +5,15 @@ layout {
         }
         pane split_direction="vertical" {
             pane size="60%" split_direction="horizontal" {
-                pane command="nvim" size="60%" {
+                pane name="LazyVim" command="nvim" size="60%" {
                     args "."
                 }
-                pane command="lazygit" size="40%"
+                pane name="LazyGit" command="lazygit" size="40%"
             }
             pane size="40%" stacked=true {
                 pane name="Terminal"
-                pane command="codex"
-                pane command="cursor-agent"
-                pane command="claude"
+                pane name="Gemini" command="gemini"
+                pane name="Cursor" command="cursor-agent"
             }
         }
         pane size=1 borderless=true {
@@ -25,7 +24,7 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        pane command="codex"
+        pane name="Gemini Planning" command="gemini"
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
@@ -34,18 +33,7 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        pane command="lazygit"
-        pane size=1 borderless=true {
-            plugin location="zellij:status-bar"
-        }
-    }
-    tab name="Usage" hide_floating_panes=true {
-        pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
-        }
-        pane command="bunx" {
-            args "ccusage" "blocks" "--live"
-        }
+        pane name="LazyGit Review" command="lazygit"
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
@@ -54,7 +42,7 @@ layout {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        pane focus=true
+        pane name="Terminal" focus=true
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }

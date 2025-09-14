@@ -1,17 +1,17 @@
 # AI-CLI - Zellij Layout for AI Coding
 
-A Zellij layout configuration for an AI-powered coding environment with Claude, cursor-agent, and ccusage monitoring.
+A Zellij layout configuration for an AI-powered coding environment with Gemini CLI, Cursor CLI, and git management.
 
 ![AI-CLI](image.png)
 
 ## Prerequisites
 
 - [Zellij](https://zellij.dev/documentation/installation) terminal multiplexer
-- Claude CLI tool
-- OpenAI Codex CLI tool
-- cursor-agent
-- lazygit
-- bunx (for ccusage blocks)
+- Neovim (LazyVim)
+- LazyGit
+- Gemini CLI
+- Cursor CLI
+- Ghostty terminal emulator (optional, falls back to default terminal)
 
 ### Recommended: LazyVim
 If you use `nvim` in this layout, consider installing [LazyVim](https://lazyvim.org) for an excellent out-of-the-box coding experience (LSP, formatting, treesitter, file explorer).
@@ -75,24 +75,22 @@ This will launch Zellij with the AI coding layout.
 The layout includes several tabs:
 
 ### Coding Tab (default)
-- Left pane (60%): Claude - Full height for AI coding assistance
+- Left pane (60%): 
+  - Neovim - Code editor
+  - LazyGit - Git interface
 - Right panes (40%): 
-  - Codex - OpenAI Codex for code generation
-  - lazygit - Git interface for version control
+  - Terminal - Terminal emulator (ghostty)
+  - Gemini CLI - Gemini AI coding assistance
+  - Cursor CLI - Cursor AI agent
 
 ### Planning Tab
-- Left pane (50%): Claude
-- Right pane (50%): cursor-agent
+- Full pane: Gemini CLI Planning - AI planning assistance
 
 ### Review Tab
-- Left pane (50%): cursor-agent
-- Right pane (50%): lazygit
-
-### Usage Tab
-- Full pane: ccusage blocks (live monitoring)
+- Full pane: LazyGit Review - Git interface for code review
 
 ### Terminal Tab
-- Full pane: Regular terminal
+- Full pane: Terminal - Terminal emulator (ghostty)
 
 ## Customization
 
